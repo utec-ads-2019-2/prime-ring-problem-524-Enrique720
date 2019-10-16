@@ -16,7 +16,7 @@ void backtracking(int L, bool visit[])
             return;
         printf("1");
         for (int i = 1; i < N; ++i)
-            cout << " " <<  ans[i]);
+            cout << " " <<  ans[i];
         cout << endl;
         return;
     }
@@ -35,7 +35,7 @@ int main()
     while (cin >> N) {
         if (Case++)
             cout << endl;
-        cout<<"Case "<<Case<<": "<< endl;
+        cout<<"Case "<<Case<<":"<< endl;
         bool visit[20] = {0};
         backtracking(1, visit);
     }
